@@ -38,3 +38,16 @@ for i in y:
     return sum
 dict={'Rick': 85, 'Amit': 42, 'George': 53, 'Tanya': 60, 'Linda': 35}
 print("toatl ampount",amount_paid(dict))
+
+--------------------------------------------------------------------------------------------
+
+total=[1,2,0,0,4,1,6,2,1,3]
+temp=[]
+t_sum=sum(total)
+for runs in total :
+  if(runs%2 == 0):
+    temp.append(runs)
+score = sum(temp)
+print ("Total Score: " + str(t_sum))
+print("No of runs by batsman 1 : "+ str(t_sum-score))
+print("No of runs by batsman 2 : "+ str(score))
