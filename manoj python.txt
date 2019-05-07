@@ -1,0 +1,40 @@
+
+1)for fizzbuzz in range (100):
+  if fizzbuzz % 3 ==0 and fizzbuzz % 5==0:
+    print('fizzbuzz')
+    continue
+  elif fizzbuzz % 3 == 0:
+    print('fizz')
+    continue
+  elif fizzbuzz % 5 ==0:
+    print('buzz')
+    continue
+  
+
+print(fizzbuzz)
+
+-----------------------------------------------------------------------------------------
+
+2)def countX(lst, x): 
+    count = 0
+    for ele in lst: 
+        if (ele == x): 
+            count = count + 1
+    return count  
+lst = [1, 2, 3, 5, 8, 4, 7, 9, 1, 4, 12, 5, 6, 5, 2, 1, 0, 8, 1] 
+y=set(lst)
+for i in y:
+  z=countX(lst, i)
+  if z>1:
+    print(str(i)+"-"+str(z))
+
+--------------------------------------------------------------------------------------------
+
+3)def amount_paid(myamount):
+    sum = 0
+    for i in myamount: 
+        sum = sum + myamount[i] 
+      
+    return sum
+dict={'Rick': 85, 'Amit': 42, 'George': 53, 'Tanya': 60, 'Linda': 35}
+print("toatl ampount",amount_paid(dict))
